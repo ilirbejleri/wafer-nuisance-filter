@@ -46,10 +46,12 @@ complexity, with independent fair signs $\sigma_i$.
   the supremum.
   \item \emph{Range.} $\psi$ takes values in $(0,\ln2]$, so $\Delta\le\ln2$ for every $B$.
   \item \emph{Contraction.} $\abs{\ell'(u)}=1/(1+e^{u})\le1$, so $\ell$ is 1-Lipschitz, and so is
-  $\psi$ ($\abs{\min(a,c)-\min(b,c)}\le\abs{a-b}$). By the contraction lemma (a 1-Lipschitz map
-  applied to every function of a class does not increase its Rademacher complexity;
-  \citealp{bartlett2002rademacher}),
-  $\hat R_S(\cF)\le\hat R_S(\{(x,y)\mapsto y\,w\cdot x\})$.
+  $\psi$ ($\abs{\min(a,c)-\min(b,c)}\le\abs{a-b}$). By the contraction lemma of
+  \citet[ch.~26]{shalevshwartz2014understanding} (if $\varphi_1,\dots,\varphi_n$ are $\rho$-Lipschitz,
+  applying $\varphi_i$ to the $i$-th coordinate of every vector in a set $A\subset\R^n$ multiplies its
+  Rademacher complexity by at most $\rho$; this version has no absolute values and needs no
+  condition $\varphi_i(0)=0$), applied to the margin vectors $(y_i\,w\cdot x_i)_{i\le n}$ with
+  $\varphi_i=\psi$, $\hat R_S(\cF)\le\hat R_S(\{(x,y)\mapsto y\,w\cdot x\})$.
   \item \emph{Margin class.} For fixed labels, $\sigma_iy_i$ are again independent fair signs, so
   the margin class has the same complexity as $\{x\mapsto w\cdot x:\norm w\le B\}$.
   \item \emph{Linear class.} By Cauchy--Schwarz, then Jensen, then $\E[\sigma_i\sigma_j]=\mathbb 1[i=j]$,
