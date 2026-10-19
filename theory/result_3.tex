@@ -184,8 +184,11 @@ Estimating $H$ and $G$ from the $n$ labels costs almost nothing: plug-in and pop
 agree within $\EThreeBMaxRatioGap$ (in ratio) at every $n$. What fails at small $n$ is the
 asymptotic formula itself: at $n=\EThreeBNMinOverP\,p$ the prediction is only
 $\EThreeBRatioFirstMin$--$\EThreeBRatioFirstMax$ of the improvement, because the excess at $n$ is still
-far above its limit. Single runs scatter: the per-run error is as wide as the spread of the
-improvement itself, while the prediction varies by only $\EThreeBPredSdMin$--$\EThreeBPredSdMax$ of the
+far above its limit. This gap is consistent with known behaviour of the logistic
+maximum-likelihood estimate when $p/n$ is not negligible: \citet{sur2019modern} show that its
+coefficients are then inflated in magnitude and more variable than the classical theory predicts,
+though their theory assumes a Gaussian design and a well-specified model, neither of which holds
+here. Single runs scatter: the per-run error is as wide as the spread of the improvement itself, while the prediction varies by only $\EThreeBPredSdMin$--$\EThreeBPredSdMax$ of the
 mean. For PCA-4, $\EThreeBPcaFourFracNeg$ of runs even got worse with $\EThreeBFactor\times$ the labels.
 The last column is the measured drop in test 0-1 error from $n$ to $\EThreeBFactor n$ labels (mean
 $\pm$ se), reported with no theory attached.
