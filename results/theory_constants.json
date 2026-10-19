@@ -1,0 +1,1630 @@
+{
+  "CnnFullC": {
+    "value": "39.05",
+    "source": "features.json"
+  },
+  "CnnFullLinValError": {
+    "value": "0.092",
+    "source": "features.json"
+  },
+  "CnnFullMeanSqNorm": {
+    "value": "0.25",
+    "source": "features.json"
+  },
+  "EFourAlpha": {
+    "value": "0.05",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourEightKCert": {
+    "value": "100.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourEightKCertBound": {
+    "value": "0.0483",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourEightKDetect": {
+    "value": "0.801",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourEightKMargin": {
+    "value": "0.0208",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourEightKTrueFar": {
+    "value": "0.0273",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourEightKViol": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourEightKViolHi": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFarHalfwidth": {
+    "value": "0.0043",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFiveHundredCert": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFiveHundredCertBound": {
+    "value": "\\text{--}",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFiveHundredDetect": {
+    "value": "\\text{--}",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFiveHundredMargin": {
+    "value": "0.0831",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFiveHundredTrueFar": {
+    "value": "\\text{--}",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFiveHundredViol": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFiveHundredViolHi": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFourKCert": {
+    "value": "100.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFourKCertBound": {
+    "value": "0.0479",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFourKDetect": {
+    "value": "0.779",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFourKMargin": {
+    "value": "0.0294",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFourKTrueFar": {
+    "value": "0.0187",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFourKViol": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourFourKViolHi": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourMaxSelectedFar": {
+    "value": "0.0325",
+    "source": "e4_false_alarms_raw.csv"
+  },
+  "EFourMinMPossible": {
+    "value": "1{,}382",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourNFar": {
+    "value": "100{,}000",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourNTrain": {
+    "value": "4{,}096",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourOneKCert": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourOneKCertBound": {
+    "value": "\\text{--}",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourOneKDetect": {
+    "value": "\\text{--}",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourOneKMargin": {
+    "value": "0.0588",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourOneKTrueFar": {
+    "value": "\\text{--}",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourOneKViol": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourOneKViolHi": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourOracleDetect": {
+    "value": "0.836",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourOracleFar": {
+    "value": "0.0476",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourPass": {
+    "value": "yes",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourRepeats": {
+    "value": "200",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourScorerB": {
+    "value": "128",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourScorerValError": {
+    "value": "0.070",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourSmallestM": {
+    "value": "2{,}000",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourSmallestMAll": {
+    "value": "2{,}000",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourT": {
+    "value": "50",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourTwoKCert": {
+    "value": "100.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourTwoKCertBound": {
+    "value": "0.0480",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourTwoKDetect": {
+    "value": "0.727",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourTwoKMargin": {
+    "value": "0.0416",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourTwoKTrueFar": {
+    "value": "0.0071",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourTwoKViol": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourTwoKViolHi": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourUnionFactor": {
+    "value": "1.52",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourViolBoundZero": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EOneMinFracWithinBound": {
+    "value": "100.0\\%",
+    "source": "e1_thresholds.json"
+  },
+  "EOneNLast": {
+    "value": "16{,}384",
+    "source": "e1_thresholds.json"
+  },
+  "EOneOvlBoundPass": {
+    "value": "yes",
+    "source": "e1_thresholds.json"
+  },
+  "EOneOvlBoundRatioLast": {
+    "value": "964",
+    "source": "e1_thresholds.json"
+  },
+  "EOneOvlFitNMax": {
+    "value": "512",
+    "source": "e1_thresholds.json"
+  },
+  "EOneOvlFitNMin": {
+    "value": "16",
+    "source": "e1_thresholds.json"
+  },
+  "EOneOvlFitPoints": {
+    "value": "6",
+    "source": "e1_thresholds.json"
+  },
+  "EOneOvlLStarTest": {
+    "value": "0.1066",
+    "source": "e1_thresholds.json"
+  },
+  "EOneOvlSlope": {
+    "value": "-0.94",
+    "source": "e1_thresholds.json"
+  },
+  "EOneOvlSlopePass": {
+    "value": "yes",
+    "source": "e1_thresholds.json"
+  },
+  "EOneOvlThetaStar": {
+    "value": "0.144",
+    "source": "e1_thresholds.json"
+  },
+  "EOneRepeats": {
+    "value": "100",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepBoundPass": {
+    "value": "yes",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepBoundRatioLast": {
+    "value": "\\infty",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepFitNMax": {
+    "value": "64",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepFitNMin": {
+    "value": "16",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepFitPoints": {
+    "value": "3",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepInconsistentRuns": {
+    "value": "1",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepLStarBound": {
+    "value": "0.00003",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepLStarTest": {
+    "value": "0",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepMaxTrainNuisancePeak": {
+    "value": "0.237",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepNTest": {
+    "value": "100{,}000",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepRunsTotal": {
+    "value": "1{,}100",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepSlope": {
+    "value": "-1.72",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepSlopePass": {
+    "value": "no",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepTestErrors": {
+    "value": "0",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepZeroFracFourK": {
+    "value": "100.0\\%",
+    "source": "e1_thresholds_raw.csv"
+  },
+  "EOneSepZeroFracOneK": {
+    "value": "81.0\\%",
+    "source": "e1_thresholds_raw.csv"
+  },
+  "EOneSepZeroFracSixteen": {
+    "value": "11.0\\%",
+    "source": "e1_thresholds_raw.csv"
+  },
+  "EThreeBFactor": {
+    "value": "4",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBMaxRatioGap": {
+    "value": "0.04",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBNList": {
+    "value": "10, 20, 50, 100",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBNMaxOverP": {
+    "value": "100",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBNMinOverP": {
+    "value": "10",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourErrHi": {
+    "value": "0.78",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourErrLo": {
+    "value": "-1.24",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourErrSd": {
+    "value": "0.78",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourFloorRel": {
+    "value": "6.7\\%",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourFracNeg": {
+    "value": "5.0\\%",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourMeasLast": {
+    "value": "2.00",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourMeasSd": {
+    "value": "0.78",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourPLast": {
+    "value": "1.88",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourPass": {
+    "value": "yes",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourPluginLast": {
+    "value": "1.84",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourPopLast": {
+    "value": "1.83",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourPredSd": {
+    "value": "0.03",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourRatioFirst": {
+    "value": "0.33",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourRatioLast": {
+    "value": "0.92",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourRatioPLast": {
+    "value": "0.94",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourRatioPopLast": {
+    "value": "0.92",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourSeLast": {
+    "value": "0.11",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourSeparable": {
+    "value": "3",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourTraceRatioFirst": {
+    "value": "0.98",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourTraceRatioLast": {
+    "value": "1.00",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourZeroOneFirst": {
+    "value": "0.0203",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourZeroOneLast": {
+    "value": "0.0021",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaFourZeroOneSeLast": {
+    "value": "0.0003",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenErrHi": {
+    "value": "0.47",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenErrLo": {
+    "value": "-0.75",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenErrSd": {
+    "value": "0.49",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenFloorRel": {
+    "value": "7.1\\%",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenFracNeg": {
+    "value": "0.0\\%",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenMeasLast": {
+    "value": "7.79",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenMeasSd": {
+    "value": "0.49",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenPLast": {
+    "value": "6.38",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenPass": {
+    "value": "yes",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenPluginLast": {
+    "value": "6.85",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenPopLast": {
+    "value": "6.95",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenPredSd": {
+    "value": "0.03",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenRatioFirst": {
+    "value": "0.33",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenRatioLast": {
+    "value": "0.88",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenRatioPLast": {
+    "value": "0.82",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenRatioPopLast": {
+    "value": "0.89",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenSeLast": {
+    "value": "0.27",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenSeparable": {
+    "value": "0",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenTraceRatioFirst": {
+    "value": "0.89",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenTraceRatioLast": {
+    "value": "0.99",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenZeroOneFirst": {
+    "value": "0.0214",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenZeroOneLast": {
+    "value": "0.0015",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixteenZeroOneSeLast": {
+    "value": "0.0001",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourErrHi": {
+    "value": "0.27",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourErrLo": {
+    "value": "-0.42",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourErrSd": {
+    "value": "0.27",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourFloorRel": {
+    "value": "7.5\\%",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourFracNeg": {
+    "value": "0.0\\%",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourMeasLast": {
+    "value": "27.39",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourMeasSd": {
+    "value": "0.27",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourPLast": {
+    "value": "24.38",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourPass": {
+    "value": "yes",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourPluginLast": {
+    "value": "25.83",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourPopLast": {
+    "value": "25.93",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourPredSd": {
+    "value": "0.02",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourRatioFirst": {
+    "value": "0.34",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourRatioLast": {
+    "value": "0.94",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourRatioPLast": {
+    "value": "0.89",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourRatioPopLast": {
+    "value": "0.95",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourSeLast": {
+    "value": "0.53",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourSeparable": {
+    "value": "0",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourTraceRatioFirst": {
+    "value": "0.91",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourTraceRatioLast": {
+    "value": "1.00",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourZeroOneFirst": {
+    "value": "0.0233",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourZeroOneLast": {
+    "value": "0.0016",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPcaSixtyFourZeroOneSeLast": {
+    "value": "0.0001",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPredSdMax": {
+    "value": "0.03",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBPredSdMin": {
+    "value": "0.02",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBRangeHi": {
+    "value": "1.25",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBRangeLo": {
+    "value": "0.80",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBRatioFirstMax": {
+    "value": "0.34",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBRatioFirstMin": {
+    "value": "0.33",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeBRepeats": {
+    "value": "200",
+    "source": "e3b_plugin_curve.json"
+  },
+  "EThreeNMax": {
+    "value": "19{,}500",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreeNPop": {
+    "value": "1{,}000{,}000",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourCovTraceLast": {
+    "value": "1.006",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourCoverage": {
+    "value": "0.951",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourCoverageFirst": {
+    "value": "0.916",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourFloorLast": {
+    "value": "0.26",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourFromNP": {
+    "value": "50",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourHalfA": {
+    "value": "2.45",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourHalfB": {
+    "value": "2.44",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourMeasLast": {
+    "value": "2.51",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourMiss": {
+    "value": "0.978",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourP": {
+    "value": "5",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourPHalf": {
+    "value": "2.5",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourPass": {
+    "value": "yes",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourPred": {
+    "value": "2.44",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourRatioFirst": {
+    "value": "4.140",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourRatioLast": {
+    "value": "1.026",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourSeLast": {
+    "value": "0.12",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaFourSeparable": {
+    "value": "1",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenCovTraceLast": {
+    "value": "1.019",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenCoverage": {
+    "value": "0.944",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenCoverageFirst": {
+    "value": "0.880",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenFloorLast": {
+    "value": "1.07",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenFromNP": {
+    "value": "300",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenHalfA": {
+    "value": "9.28",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenHalfB": {
+    "value": "9.27",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenMeasLast": {
+    "value": "9.63",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenMiss": {
+    "value": "1.091",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenP": {
+    "value": "17",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenPHalf": {
+    "value": "8.5",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenPass": {
+    "value": "yes",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenPred": {
+    "value": "9.27",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenRatioFirst": {
+    "value": "2.190",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenRatioLast": {
+    "value": "1.039",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenSeLast": {
+    "value": "0.23",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixteenSeparable": {
+    "value": "0",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourCovTraceLast": {
+    "value": "1.037",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourCoverage": {
+    "value": "0.945",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourCoverageFirst": {
+    "value": "0.852",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourFloorLast": {
+    "value": "3.99",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourFromNP": {
+    "value": "100",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourHalfA": {
+    "value": "34.96",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourHalfB": {
+    "value": "34.21",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourMeasLast": {
+    "value": "35.32",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourMiss": {
+    "value": "1.064",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourP": {
+    "value": "65",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourPHalf": {
+    "value": "32.5",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourPass": {
+    "value": "yes",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourPred": {
+    "value": "34.57",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourRatioFirst": {
+    "value": "2.304",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourRatioLast": {
+    "value": "1.022",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourSeLast": {
+    "value": "0.50",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePcaSixtyFourSeparable": {
+    "value": "0",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreePopBias": {
+    "value": "1.9\\%",
+    "source": "e3_learning_curve.json"
+  },
+  "EThreeRepeats": {
+    "value": "200",
+    "source": "e3_learning_curve.json"
+  },
+  "ETwoBSpread": {
+    "value": "every run except for CNN-384: $B=128$ in 45 runs, $B=256$ in 5 runs",
+    "source": "e2_linear_bounds_raw.csv"
+  },
+  "ETwoCertBMax": {
+    "value": "32",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCertBMin": {
+    "value": "16",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullBMeanLast": {
+    "value": "140.8",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullBModeLast": {
+    "value": "128",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullBr": {
+    "value": "70.1",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullCompTermLast": {
+    "value": "1.12",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullDevTermUnclippedLast": {
+    "value": "5.83",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullEstFirst": {
+    "value": "0.102",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullEstLast": {
+    "value": "0.0015",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullFirstNRad": {
+    "value": "\\text{none in range}",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullFirstNVC": {
+    "value": "\\text{none in range}",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullFracRad": {
+    "value": "100.0\\%",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullFracVC": {
+    "value": "100.0\\%",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullLStar": {
+    "value": "0.067",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullLogFloor": {
+    "value": "0.28",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullPass": {
+    "value": "yes",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullPsiFloor": {
+    "value": "0.16",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullRSq": {
+    "value": "0.25",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullRadCertLast": {
+    "value": "0.69",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullRadCertTestLast": {
+    "value": "0.091",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullRadLast": {
+    "value": "1.31",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullRadNeedN": {
+    "value": "4{,}300{,}000",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullRadUnclippedCertLast": {
+    "value": "1.00",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullRadUnclippedLast": {
+    "value": "7.22",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullTestLast": {
+    "value": "0.069",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullTrainLogTermLast": {
+    "value": "0.27",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullTrainPsiTermLast": {
+    "value": "0.17",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullVCLast": {
+    "value": "0.83",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullVCNeedN": {
+    "value": "800{,}000",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullVCRoot": {
+    "value": "63.3",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCnnFullWStar": {
+    "value": "169",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCrossHandCnnFull": {
+    "value": "\\text{none}",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCrossHandPcaSixteen": {
+    "value": "\\text{none}",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCrossHandPcaSixtyFour": {
+    "value": "\\text{none}",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCrossPcaSixteenCnnFull": {
+    "value": "512",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCrossPcaSixteenPcaSixtyFour": {
+    "value": "512",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoCrossPcaSixtyFourCnnFull": {
+    "value": "1{,}024",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoDevTermLast": {
+    "value": "0.029",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandBMeanLast": {
+    "value": "128",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandBModeLast": {
+    "value": "128",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandBr": {
+    "value": "48.4",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandCompTermLast": {
+    "value": "0.77",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandDevTermUnclippedLast": {
+    "value": "5.30",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandEstFirst": {
+    "value": "0.010",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandEstLast": {
+    "value": "0.0003",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandFirstNRad": {
+    "value": "\\text{none in range}",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandFirstNVC": {
+    "value": "32{,}768",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandFracRad": {
+    "value": "100.0\\%",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandFracVC": {
+    "value": "100.0\\%",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandLStar": {
+    "value": "0.067",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandLogFloor": {
+    "value": "0.28",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandPass": {
+    "value": "yes",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandPsiFloor": {
+    "value": "0.16",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandRSq": {
+    "value": "0.14",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandRadCertLast": {
+    "value": "0.37",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandRadCertTestLast": {
+    "value": "0.076",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandRadLast": {
+    "value": "0.96",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandRadNeedN": {
+    "value": "2{,}300{,}000",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandRadUnclippedCertLast": {
+    "value": "0.84",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandRadUnclippedLast": {
+    "value": "6.35",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandTestLast": {
+    "value": "0.068",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandTrainLogTermLast": {
+    "value": "0.28",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandTrainPsiTermLast": {
+    "value": "0.16",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandVCLast": {
+    "value": "0.23",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandVCRatioLast": {
+    "value": "3.4",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandVCRoot": {
+    "value": "10.7",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoHandWStar": {
+    "value": "119",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoLStarHalfwidth": {
+    "value": "0.0043",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoMinFracBoth": {
+    "value": "100.0\\%",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoNFirst": {
+    "value": "128",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoNLast": {
+    "value": "32{,}768",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenBMeanLast": {
+    "value": "32",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenBModeLast": {
+    "value": "32",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenBr": {
+    "value": "15.0",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenCompTermLast": {
+    "value": "0.24",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenDevTermUnclippedLast": {
+    "value": "1.32",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenEstFirst": {
+    "value": "0.024",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenEstLast": {
+    "value": "0.0001",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenFirstNRad": {
+    "value": "\\text{none in range}",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenFirstNVC": {
+    "value": "\\text{none in range}",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenFracRad": {
+    "value": "100.0\\%",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenFracVC": {
+    "value": "100.0\\%",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenLStar": {
+    "value": "0.115",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenLogFloor": {
+    "value": "0.45",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenPass": {
+    "value": "yes",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenPsiFloor": {
+    "value": "0.27",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenRSq": {
+    "value": "0.22",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenRadCertLast": {
+    "value": "0.53",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenRadCertTestLast": {
+    "value": "0.118",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenRadLast": {
+    "value": "0.54",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenRadNeedN": {
+    "value": "\\text{never}",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenRadUnclippedCertLast": {
+    "value": "0.98",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenRadUnclippedLast": {
+    "value": "2.01",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenTestLast": {
+    "value": "0.115",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenTrainLogTermLast": {
+    "value": "0.45",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenTrainPsiTermLast": {
+    "value": "0.27",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenVCLast": {
+    "value": "0.31",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenVCRoot": {
+    "value": "13.3",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixteenWStar": {
+    "value": "26",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourBMeanLast": {
+    "value": "64",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourBModeLast": {
+    "value": "64",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourBr": {
+    "value": "33.5",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourCompTermLast": {
+    "value": "0.53",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourDevTermUnclippedLast": {
+    "value": "2.65",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourEstFirst": {
+    "value": "0.084",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourEstLast": {
+    "value": "0.0002",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourFirstNRad": {
+    "value": "\\text{none in range}",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourFirstNVC": {
+    "value": "\\text{none in range}",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourFracRad": {
+    "value": "100.0\\%",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourFracVC": {
+    "value": "100.0\\%",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourLStar": {
+    "value": "0.086",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourLogFloor": {
+    "value": "0.35",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourPass": {
+    "value": "yes",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourPsiFloor": {
+    "value": "0.21",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourRSq": {
+    "value": "0.27",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourRadCertLast": {
+    "value": "0.62",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourRadCertTestLast": {
+    "value": "0.089",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourRadLast": {
+    "value": "0.77",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourRadNeedN": {
+    "value": "4{,}000{,}000",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourRadUnclippedCertLast": {
+    "value": "1.01",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourRadUnclippedLast": {
+    "value": "3.53",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourTestLast": {
+    "value": "0.086",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourTrainLogTermLast": {
+    "value": "0.35",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourTrainPsiTermLast": {
+    "value": "0.21",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourVCLast": {
+    "value": "0.44",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourVCRoot": {
+    "value": "26.0",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoPcaSixtyFourWStar": {
+    "value": "58",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoRadLastMax": {
+    "value": "1.31",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoRadLastMin": {
+    "value": "0.54",
+    "source": "e2_linear_bounds.json"
+  },
+  "ETwoRepeats": {
+    "value": "50",
+    "source": "e2_linear_bounds.json"
+  },
+  "HandC": {
+    "value": "8.62",
+    "source": "features.json"
+  },
+  "HandLinValError": {
+    "value": "0.073",
+    "source": "features.json"
+  },
+  "HandMeanSqNorm": {
+    "value": "0.14",
+    "source": "features.json"
+  },
+  "OvlBestErrorRate": {
+    "value": "0.1069",
+    "source": "stage1.json"
+  },
+  "OvlBestErrors": {
+    "value": "21{,}387",
+    "source": "stage1.json"
+  },
+  "OvlBinAboveHi": {
+    "value": "0.16",
+    "source": "stage1.json"
+  },
+  "OvlBinAboveLo": {
+    "value": "0.15",
+    "source": "stage1.json"
+  },
+  "OvlBinBelowHi": {
+    "value": "0.14",
+    "source": "stage1.json"
+  },
+  "OvlBinBelowLo": {
+    "value": "0.13",
+    "source": "stage1.json"
+  },
+  "OvlBinWidth": {
+    "value": "0.01",
+    "source": "stage1.json"
+  },
+  "OvlCandPerDie": {
+    "value": "2.71",
+    "source": "stage1.json"
+  },
+  "OvlCondAbove": {
+    "value": "0.88",
+    "source": "stage1.json"
+  },
+  "OvlCondBelow": {
+    "value": "0.27",
+    "source": "stage1.json"
+  },
+  "OvlNPopulation": {
+    "value": "200{,}000",
+    "source": "stage1.json"
+  },
+  "OvlNuisAbove": {
+    "value": "369",
+    "source": "stage1.json"
+  },
+  "OvlNuisBelow": {
+    "value": "7{,}447",
+    "source": "stage1.json"
+  },
+  "OvlPositiveRate": {
+    "value": "0.257",
+    "source": "stage1.json"
+  },
+  "OvlRecall": {
+    "value": "0.9909",
+    "source": "stage1.json"
+  },
+  "OvlZeroCandRate": {
+    "value": "0.077",
+    "source": "stage1.json"
+  },
+  "PcaFourC": {
+    "value": "4.88",
+    "source": "features.json"
+  },
+  "PcaFourLinValError": {
+    "value": "0.193",
+    "source": "features.json"
+  },
+  "PcaFourMeanSqNorm": {
+    "value": "0.20",
+    "source": "features.json"
+  },
+  "PcaSixteenC": {
+    "value": "8.72",
+    "source": "features.json"
+  },
+  "PcaSixteenLinValError": {
+    "value": "0.117",
+    "source": "features.json"
+  },
+  "PcaSixteenMeanSqNorm": {
+    "value": "0.22",
+    "source": "features.json"
+  },
+  "PcaSixtyFourC": {
+    "value": "15.26",
+    "source": "features.json"
+  },
+  "PcaSixtyFourLinValError": {
+    "value": "0.090",
+    "source": "features.json"
+  },
+  "PcaSixtyFourMeanSqNorm": {
+    "value": "0.27",
+    "source": "features.json"
+  },
+  "PeakValError": {
+    "value": "0.109",
+    "source": "features.json"
+  },
+  "PoolCertification": {
+    "value": "1{,}600{,}000",
+    "source": "e4_false_alarms.json"
+  },
+  "PoolDefectiveDies": {
+    "value": "20{,}000",
+    "source": "e4_false_alarms.json"
+  },
+  "PoolFarTest": {
+    "value": "100{,}000",
+    "source": "e4_false_alarms.json"
+  },
+  "PoolFeatureFit": {
+    "value": "20{,}000",
+    "source": "e2_linear_bounds.json"
+  },
+  "PoolPopulationEThree": {
+    "value": "1{,}000{,}000",
+    "source": "e3_learning_curve.json"
+  },
+  "PoolPopulationETwo": {
+    "value": "200{,}000",
+    "source": "e2_linear_bounds.json"
+  },
+  "PoolTest": {
+    "value": "100{,}000",
+    "source": "e2_linear_bounds.json"
+  },
+  "PoolTrainEOne": {
+    "value": "1{,}638{,}400",
+    "source": "e1_thresholds.json"
+  },
+  "PoolTrainEThree": {
+    "value": "3{,}900{,}000",
+    "source": "e3_learning_curve.json"
+  },
+  "PoolTrainEThreeB": {
+    "value": "5{,}200{,}000",
+    "source": "e3b_plugin_curve.json"
+  },
+  "PoolTrainETwo": {
+    "value": "1{,}638{,}400",
+    "source": "e2_linear_bounds.json"
+  },
+  "PoolValidation": {
+    "value": "10{,}000",
+    "source": "e2_linear_bounds.json"
+  },
+  "SepBestErrorRate": {
+    "value": "0",
+    "source": "stage1.json"
+  },
+  "SepBestErrors": {
+    "value": "0",
+    "source": "stage1.json"
+  },
+  "SepCandPerDie": {
+    "value": "2.68",
+    "source": "stage1.json"
+  },
+  "SepMaxNuisancePeak": {
+    "value": "0.170",
+    "source": "stage1.json"
+  },
+  "SepMinDefectPeak": {
+    "value": "0.201",
+    "source": "stage1.json"
+  },
+  "SepNPopulation": {
+    "value": "200{,}000",
+    "source": "stage1.json"
+  },
+  "SepPositiveRate": {
+    "value": "0.256",
+    "source": "stage1.json"
+  },
+  "SepRecall": {
+    "value": "1",
+    "source": "stage1.json"
+  },
+  "SepZeroCandRate": {
+    "value": "0.077",
+    "source": "stage1.json"
+  },
+  "StageOneNRecall": {
+    "value": "20{,}000",
+    "source": "stage1.json"
+  },
+  "StageOneNReference": {
+    "value": "32",
+    "source": "stage1.json"
+  },
+  "StageOneNTune": {
+    "value": "4{,}000",
+    "source": "stage1.json"
+  },
+  "StageOneTau": {
+    "value": "0.0597",
+    "source": "stage1.json"
+  },
+  "StageOneTuningRecall": {
+    "value": "0.990",
+    "source": "stage1.json"
+  },
+  "TrivialError": {
+    "value": "0.257",
+    "source": "stage1.json"
+  }
+}
