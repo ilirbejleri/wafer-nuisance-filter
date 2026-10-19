@@ -110,9 +110,10 @@ The VC bound beats the trivial error $\TrivialError$ only for the hand-crafted f
 $n=\ETwoHandFirstNVC$); for CNN-384 it would need $n\approx\ETwoCnnFullVCNeedN$. The usual expectation
 that the dimension-free bound is tighter fails: at the validated $B$ the Rademacher bound is
 $\ETwoRadLastMin$--$\ETwoRadLastMax$, above VC for every feature set. Choosing $B$ to minimize the
-Rademacher bound instead trades error for bound; for CNN-384 that reaches $\ETwoCnnFullRadCertLast$,
-below VC ($\ETwoCnnFullVCLast$), at test error $\ETwoCnnFullRadCertTestLast$ instead of
-$\ETwoCnnFullTestLast$ (\cref{sec:looseness}).
+Rademacher bound instead trades error for bound. For CNN-384 that filter's bound is tighter than VC
+($\ETwoCnnFullRadCertLast$ vs $\ETwoCnnFullVCLast$), though neither is below the trivial $\TrivialError$,
+and its test error is $\ETwoCnnFullRadCertTestLast$ instead of $\ETwoCnnFullTestLast$
+(\cref{sec:looseness}).
 
 \paragraph{Approximation vs.\ estimation (E2b).} $L(h^\star)$ is the test error of the logistic fit on
 the population pool, an upper estimate of the best-in-class error. Richer CNN features lower it

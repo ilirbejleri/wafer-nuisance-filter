@@ -22,8 +22,9 @@ how well standard learning theory predicts that number**.
   hand-crafted features) is still {{ETwoHandVCRatioLast}}× the measured error at n = {{ETwoNLast}}.
 - **The Rademacher bound is looser than VC here**, for every feature set at the validated norm
   bound B. It is dimension-free, but the overlapping classes force a large ‖w‖, and its
-  complexity term grows with B. Only for the 384-dimensional CNN features does the filter that
-  minimizes its own Rademacher bound ({{ETwoCnnFullRadCertLast}}) beat VC ({{ETwoCnnFullVCLast}}).
+  complexity term grows with B. For the 384-dimensional CNN features, the filter that minimizes
+  its own Rademacher bound is tighter than VC ({{ETwoCnnFullRadCertLast}} vs {{ETwoCnnFullVCLast}}), though neither is below the
+  trivial {{TrivialError}}.
 - **The separable-regime slope check failed.** I expected a 1/n rate and fixed the range
   [−1.15, −0.85] before running; the fit gave {{EOneSepSlope}} on only {{EOneSepFitPoints}} points. The
   separable pool has a margin between nuisance and defects, so once the learned threshold lands
