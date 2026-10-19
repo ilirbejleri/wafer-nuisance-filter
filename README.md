@@ -19,7 +19,7 @@ how well standard learning theory predicts that number**.
 
 ## What I found
 
-- **The bounds hold, but none of them is a usable label budget.** The tightest one (VC,
+- **The bounds hold, but none of them are a usable label budget.** The tightest one (VC,
   hand-crafted features) is still 3.4× the measured error at n = 32,768.
 - **The Rademacher bound is looser than VC here**, for every feature set at the validated norm
   bound B. It is dimension-free, but the overlapping classes force a large ‖w‖, and its
