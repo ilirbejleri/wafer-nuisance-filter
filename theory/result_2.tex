@@ -84,7 +84,9 @@ term becomes $3BC\sqrt{\ln(2/\delta)/(2n)}$, which grows with $B$. It is compute
 
 \paragraph{Measured vs.\ theory (E2a).} Overlapping regime; $\ETwoRepeats$ repeats on fresh dies,
 $n=\ETwoNFirst,\dots,\ETwoNLast$. The projected-gradient fit runs at every $B\in\{2^{-1},\dots,2^8\}$
-($G=10$) and $B$ is chosen by validation error; both bounds are evaluated for that filter. The
+($G=10$) and $B$ is chosen by validation error; both bounds are evaluated for that filter. The grid
+was extended from $\{0.5,\dots,16\}$ to $\{0.5,\dots,256\}$ before the full E2 run, because validation
+showed that $B=16$ constrained the CNN-384 filter. The
 check fixed before running (both bounds above the test error in at least 95\% of runs) holds for
 every feature set.
 
