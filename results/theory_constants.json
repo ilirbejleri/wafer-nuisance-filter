@@ -15,6 +15,194 @@
     "value": "0.05",
     "source": "e4_false_alarms.json"
   },
+  "EFourChEightKCert": {
+    "value": "100.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChEightKCertBound": {
+    "value": "0.0483",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChEightKDetect": {
+    "value": "0.823",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChEightKEta": {
+    "value": "0.19",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChEightKTrueFar": {
+    "value": "0.0387",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChEightKViol": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChEightKViolHi": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFiveHundredCert": {
+    "value": "100.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFiveHundredCertBound": {
+    "value": "0.0454",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFiveHundredDetect": {
+    "value": "0.752",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFiveHundredEta": {
+    "value": "0.74",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFiveHundredTrueFar": {
+    "value": "0.0123",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFiveHundredViol": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFiveHundredViolHi": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFourKCert": {
+    "value": "100.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFourKCertBound": {
+    "value": "0.0481",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFourKDetect": {
+    "value": "0.816",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFourKEta": {
+    "value": "0.26",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFourKTrueFar": {
+    "value": "0.0348",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFourKViol": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChFourKViolHi": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChMaxSelectedFar": {
+    "value": "0.0444",
+    "source": "e4_false_alarms_raw.csv"
+  },
+  "EFourChMinMPossible": {
+    "value": "277",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChOneKCert": {
+    "value": "100.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChOneKCertBound": {
+    "value": "0.0467",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChOneKDetect": {
+    "value": "0.788",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChOneKEta": {
+    "value": "0.53",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChOneKTrueFar": {
+    "value": "0.0225",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChOneKViol": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChOneKViolHi": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChPass": {
+    "value": "yes",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChSmallestM": {
+    "value": "300",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChSmallestMAll": {
+    "value": "500",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChThreeHundredCert": {
+    "value": "60.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChThreeHundredCertBound": {
+    "value": "0.0461",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChThreeHundredDetect": {
+    "value": "0.682",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChThreeHundredEta": {
+    "value": "0.96",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChThreeHundredTrueFar": {
+    "value": "0.0033",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChThreeHundredViol": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChThreeHundredViolHi": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChTwoKCert": {
+    "value": "100.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChTwoKCertBound": {
+    "value": "0.0474",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChTwoKDetect": {
+    "value": "0.805",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChTwoKEta": {
+    "value": "0.37",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChTwoKTrueFar": {
+    "value": "0.0294",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChTwoKViol": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourChTwoKViolHi": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
   "EFourEightKCert": {
     "value": "100.0\\%",
     "source": "e4_false_alarms.json"
@@ -183,6 +371,34 @@
     "value": "50",
     "source": "e4_false_alarms.json"
   },
+  "EFourThreeHundredCert": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourThreeHundredCertBound": {
+    "value": "\\text{--}",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourThreeHundredDetect": {
+    "value": "\\text{--}",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourThreeHundredMargin": {
+    "value": "0.1073",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourThreeHundredTrueFar": {
+    "value": "\\text{--}",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourThreeHundredViol": {
+    "value": "0.0\\%",
+    "source": "e4_false_alarms.json"
+  },
+  "EFourThreeHundredViolHi": {
+    "value": "1.5\\%",
+    "source": "e4_false_alarms.json"
+  },
   "EFourTwoKCert": {
     "value": "100.0\\%",
     "source": "e4_false_alarms.json"
@@ -273,6 +489,10 @@
   },
   "EOneSepBoundRatioLast": {
     "value": "\\infty",
+    "source": "e1_thresholds.json"
+  },
+  "EOneSepConsistentRuns": {
+    "value": "1{,}099",
     "source": "e1_thresholds.json"
   },
   "EOneSepFitNMax": {

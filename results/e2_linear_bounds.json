@@ -50,8 +50,8 @@
     "quick": false
   },
   "provenance": {
-    "timestamp_utc": "2026-10-19T19:55:22+00:00",
-    "git_commit": "60d1252639f9dac72f1d37f9a0b96dd3e21f7c8b",
+    "timestamp_utc": "2026-10-19T21:35:32+00:00",
+    "git_commit": "22f3ac9850a29c9d3de00c2822a6e0837608c43b",
     "git_dirty": false,
     "python": "3.11.5",
     "platform": "macOS-14.6.1-arm64-arm-64bit",

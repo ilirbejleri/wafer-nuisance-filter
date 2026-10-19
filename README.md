@@ -15,7 +15,7 @@ how well standard learning theory predicts that number**.
 | **2** Linear filter, VC and Rademacher bounds | Both bound the 0-1 error of every filter in the class | Both above the test error in 100.0% of runs. The VC bound (hand-crafted features) beats the trivial error 0.257 (always predict nuisance) from n = 32,768 and is 3.4× the test error at n = 32,768. The Rademacher bound never beats it (0.54–1.31 at n = 32,768) |
 | **3** Learning curve of logistic regression | Excess logistic loss ≈ Tr(H⁻¹G)/2n | measured / predicted at n = 300p: 1.026, 1.039, 1.022 (p = 5, 17, 65); Wald coverage 0.951, 0.944, 0.945 |
 | **3b** What 4× more labels will buy | The same formula, with H and G estimated from the labels already in hand | plug-in / measured gain at n = 100p: 0.92, 0.88, 0.94; at n = 10p only 0.33–0.34 |
-| **4** Certified die-level false-alarm rate | Hoeffding + a union bound over T = 50 thresholds certifies FAR ≤ α = 0.05 | No violations in 200 repeats at any m (violation rate ≤ 1.5% at 95%). Certifiable from m = 2,000 clean dies, where the selected threshold's true FAR is 0.0071 |
+| **4** Certified die-level false-alarm rate | Hoeffding or a multiplicative Chernoff bound, plus a union bound over T = 50 thresholds, certifies FAR ≤ α = 0.05 | No violations for either rule in 200 repeats at any m (violation rate ≤ 1.5% at 95%). Certifiable in every repeat from m = 2,000 clean dies (Hoeffding) or m = 500 (Chernoff); at m = 2,000 the selected threshold's true FAR is 0.0071 vs. 0.0294 and detection 0.727 vs. 0.805 |
 
 ## What I found
 
@@ -23,8 +23,9 @@ how well standard learning theory predicts that number**.
   hand-crafted features) is still 3.4× the measured error at n = 32,768.
 - **The Rademacher bound is looser than VC here**, for every feature set at the validated norm
   bound B. It is dimension-free, but the overlapping classes force a large ‖w‖, and its
-  complexity term grows with B. Only for the 384-dimensional CNN features does the filter that
-  minimizes its own Rademacher bound (0.69) beat VC (0.83).
+  complexity term grows with B. For the 384-dimensional CNN features, the filter that minimizes
+  its own Rademacher bound is tighter than VC (0.69 vs 0.83), though neither is below the
+  trivial 0.257.
 - **The separable-regime slope check failed.** I expected a 1/n rate and fixed the range
   [−1.15, −0.85] before running; the fit gave −1.72 on only 3 points. The
   separable pool has a margin between nuisance and defects, so once the learned threshold lands
@@ -35,6 +36,9 @@ how well standard learning theory predicts that number**.
   underestimates it. Estimating H and G from the training labels (3b) costs almost nothing. It
   predicts the *average* gain from more labels, though; one batch's gain differs from it with a
   standard deviation of 0.27–0.78 times the mean gain.
+- **Using the variance pays off for the false-alarm certificate.** Hoeffding's margin is the one for
+  the worst-case variance 1/4; the multiplicative Chernoff bound uses the small variance of rare flags
+  and certifies with 500 clean dies instead of 2,000.
 - **Ten hand-crafted features match a 384-dimensional CNN embedding** in best-in-class error
   (0.067 vs. 0.067) and are at least as good at every training size tested.
 
@@ -76,5 +80,7 @@ docs/                 README.template.md (this README is generated from it)
 - **Population quantities.** L(h\*) and Result 3's θ\*, H and G come from a large labeled
   population pool. Result 3b removes that need for H and G, but only for the expected gain, and
   only once n is large enough for the asymptotics.
-- **Elementary tools.** I kept to elementary tools (Hoeffding rather than variance-adaptive or
-  exact binomial intervals, no cross-validation), which is part of why Result 4 is conservative.
+- **Elementary tools.** I kept to elementary tools. Result 4's Hoeffding certificate pays for the
+  worst-case Bernoulli variance 1/4; the multiplicative Chernoff certificate uses the small variance
+  of rare flags and is much less conservative. I did not use exact binomial intervals or
+  cross-validation.
