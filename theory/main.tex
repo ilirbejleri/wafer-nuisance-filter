@@ -1,0 +1,69 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=MidnightBlue,citecolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+
+% ---- theorem environments -------------------------------------------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% "In short": the proof's key moves, in order.
+\newtcolorbox{inshort}{colback=gray!6,colframe=gray!55,boxrule=0.5pt,arc=2pt,
+  left=6pt,right=6pt,top=4pt,bottom=4pt,title={In short},fonttitle=\bfseries\small,
+  coltitle=black,colbacktitle=gray!20}
+
+% ---- notation -------------------------------------------------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\Tr}{\operatorname{Tr}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\setlist{itemsep=1pt,topsep=3pt}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.8}
+\setlength{\textfloatsep}{10pt plus 2pt minus 2pt}
+
+\input{generated/numbers}
+
+\title{Wafer nuisance filter: how many labels does it need?}
+\author{Ilir Bejleri}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-1.5em}
+{\small\tableofcontents}
+
+\input{setting}
+\input{result_1}
+\input{result_2}
+\input{result_3}
+\input{result_4}
+\input{looseness}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

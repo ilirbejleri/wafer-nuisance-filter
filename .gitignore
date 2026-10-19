@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Cached candidate features (regenerated from seeds; keyed by pool, seed and config hash).
+cache/
+
+# LaTeX build artifacts
+theory/*.aux
+theory/*.log
+theory/*.out
+theory/*.toc
+theory/*.fdb_latexmk
+theory/*.fls
+theory/*.synctex.gz
+theory/*.bbl
+theory/*.blg
+
+.DS_Store
+
+# Run logs and --quick smoke-run outputs are not results.
+results/.*.log
+results/*_quick*
+figures/*_quick*

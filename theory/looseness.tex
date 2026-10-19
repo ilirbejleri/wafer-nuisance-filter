@@ -1,0 +1,49 @@
+\section{Where the bounds are loose}
+\label{sec:looseness}
+
+Every guarantee held in every experiment, and the asymptotic prediction matched. The bounds are
+still loose by very different factors, and each gap traces back to one step of its proof.
+
+\paragraph{Result 1, agnostic: the worst case.} At $n=\EOneNLast$ the bound is
+$\EOneOvlBoundRatioLast\times$ the measured mean excess. (i) \emph{Rate:} it decays like
+$\sqrt{\ln n/n}$ because it must hold for every distribution, while the measured excess decays like
+$n^{\EOneOvlSlope}$. (ii) \emph{Constants:} the factor 2 for the excess and the ghost-sample halving give the 32 in
+$e^{-n\epsilon^2/32}$. (iii) \emph{Counting:} the union bound runs over all $2en$ labellings of the
+double sample, though only thresholds near $\theta^\star$ ever compete.
+
+\paragraph{Result 2, VC: dimension against sample size.} The gap grows like $\sqrt{(k+1)\ln n/n}$, so
+the bound says nothing until $n$ is many times $k+1$. For the ten hand-crafted features it is
+$\ETwoHandVCRatioLast\times$ the measured error at $n=\ETwoNLast$, the tightest bound here; for CNN-384
+it stays above the trivial error over the whole range.
+
+\paragraph{Result 2, Rademacher: the norm of the weights.} At $n=\ETwoNLast$ and the validated
+$B$ (mean $\ETwoHandBMeanLast$ for the hand-crafted features, $\norm{w^\star}=\ETwoHandWStar$), the
+hand-crafted bound $\ETwoHandRadLast$ splits into training loss $\ETwoHandTrainPsiTermLast$, complexity
+term $\ETwoHandCompTermLast$ and deviation term $\ETwoDevTermLast$ (CNN-384: $\ETwoCnnFullTrainPsiTermLast$,
+$\ETwoCnnFullCompTermLast$, $\ETwoDevTermLast$; unclipped bounds $\ETwoHandRadUnclippedLast$ and
+$\ETwoCnnFullRadUnclippedLast$). Clipping keeps the McDiarmid term at $\ETwoDevTermLast$ whatever $B$; with the logistic loss it pays
+the range $BC$ and alone reaches $\ETwoPcaSixteenDevTermUnclippedLast$--$\ETwoCnnFullDevTermUnclippedLast$.
+The binding term is now the complexity term, which is large because $B$ is: a filter with
+near-optimal logistic loss needs $\norm w$ near $\norm{w^\star}$, which is large because the classes
+overlap, and validation picks $B$ of that order. The surrogate costs too: even with infinite data
+the bound for $w^\star$ cannot go below $L_\psi(w^\star)/\ln2=\ETwoHandPsiFloor$--$\ETwoPcaSixteenPsiFloor$,
+against $L(h^\star)=\ETwoHandLStar$--$\ETwoPcaSixteenLStar$. Up to constants the VC term is
+$\sqrt{(k+1)\ln n/n}$ and the Rademacher term $Br/\sqrt n$, so Rademacher wins only when $Br$ is small
+next to $\sqrt{(k+1)\ln n}$. Here $Br$ is $\ETwoHandBr$ vs.\ $\ETwoHandVCRoot$ (hand-crafted),
+$\ETwoPcaSixteenBr$ vs.\ $\ETwoPcaSixteenVCRoot$ (PCA-16), $\ETwoPcaSixtyFourBr$ vs.\ $\ETwoPcaSixtyFourVCRoot$ (PCA-64) and
+$\ETwoCnnFullBr$ vs.\ $\ETwoCnnFullVCRoot$ (CNN-384). The dimension-free bound suits high-dimensional
+features with large-margin data, not this overlapping problem.
+
+\paragraph{Result 3: not a bound.} The prediction is a limit, so it cannot be ``loose''. It is within
+10\% from $n=\EThreePcaFourFromNP\,p$ to $\EThreePcaSixteenFromNP\,p$ depending on the features, and
+underestimates the excess at $n=10p$ by up to $\EThreePcaFourRatioFirst\times$. Result~3b shows that
+estimating $H$ and $G$ is not the weak point; the onset of the asymptotic regime is.
+
+\paragraph{Result 4: a worst-case Bernoulli and a union bound.} (i) Hoeffding's inequality holds
+for every Bernoulli parameter, so its margin is the one for variance $\frac14$, while flags with
+$p$ below $\alpha=\EFourAlpha$ have variance below $\alpha$. I kept to elementary tools (Hoeffding
+rather than variance-adaptive or exact binomial intervals); either would give a tighter margin.
+(ii) The union over $T=\EFourT$ thresholds widens the margin by
+$\sqrt{\ln(T/\delta)/\ln(1/\delta)}=\EFourUnionFactor$. The cost shows up as sensitivity: detection
+$\EFourTwoKDetect$ at $m=2{,}000$ and $\EFourEightKDetect$ at $m=8{,}000$, against
+$\EFourOracleDetect$ with full knowledge of $p(t)$.
