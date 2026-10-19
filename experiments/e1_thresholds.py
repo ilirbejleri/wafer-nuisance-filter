@@ -23,8 +23,9 @@ Realizability (separable regime). The realizable bound assumes L(h*) = 0. The ge
 guarantee it (sensor noise and the nuisance parameters are Gaussian), and the population pool's zero
 errors also chose theta*. Recorded instead: theta*'s errors on the independent test pool (an upper
 bound on L(h*) follows from ``bounds.violation_rate_bound``), and, per run, the ERM's training
-error: the proof of the realizable bound uses realizability only to make the ERM consistent with its
-sample, so the realizable bound applies to exactly the runs with zero training error.
+error. The proof of the realizable bound shows
+P(h_hat consistent with S and L(h_hat) > eps) <= delta without using realizability, so conditional
+on a consistent sample the bound holds at level delta / P(consistent).
 
 Noise floor (``eval.errors``): the measured excess at n is a mean over repeats of paired
 differences on one N-point test pool; its pool-induced standard deviation is at most

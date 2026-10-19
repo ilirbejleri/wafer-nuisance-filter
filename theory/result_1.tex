@@ -51,7 +51,8 @@ A union bound over the at most $\Pi_\cH(2n)$ labellings and the factor 2 above g
 \begin{proof}[Proof of \cref{thm:1}]
 (i) Let $\epsilon$ be the right-hand side of (i) and $A=\{\exists h:\hat L_S(h)=0,\ L(h)>\epsilon\}$.
 Since $L(h^\star)=0$, $h^\star$ is consistent with $S$ almost surely, so every ERM hypothesis is
-consistent and $L(\hat h)>\epsilon$ only on $A$.
+consistent and $L(\hat h)>\epsilon$ only on $A$. The bound $\P(A)\le\delta$ derived below does not
+use $L(h^\star)=0$.
 \emph{Symmetrization.} On $A$, pick a consistent $h$ with $L(h)>\epsilon$. Given $S$, its number
 of mistakes on $S'$ is binomial with mean $nL(h)>n\epsilon$ and variance below $nL(h)$, so by
 Chebyshev it is below $nL(h)/2$ with probability at most $4/(nL(h))<4/(n\epsilon)\le1/2$, using
@@ -118,8 +119,10 @@ makes learning faster. I kept the regime as designed and report the failure. The
 only nearly realizable: $\theta^\star$ makes $\EOneSepTestErrors$ errors on $N=\EOneSepNTest$
 independent test candidates, so $L(h^\star)\le\ln(1/\delta)/N=\EOneSepLStarBound$ with confidence
 $1-\delta$ (as in \cref{sec:result-4}), and $\EOneSepInconsistentRuns$ of the $\EOneSepRunsTotal$
-training samples is not separable. The proof of (i) only needs $\hat h$ to be consistent with its
-sample, so (i) applies to every other run.
+training samples is not separable. The proof of (i) bounds
+$\P(\hat h\text{ consistent with }S\text{ and }L(\hat h)>\epsilon)\le\delta$ without using realizability, so
+conditional on a consistent sample the bound holds at level $\delta/\P(\text{consistent})$; here
+$\EOneSepConsistentRuns$ of the $\EOneSepRunsTotal$ samples were consistent.
 
 \begin{figure}[tb]
   \centering

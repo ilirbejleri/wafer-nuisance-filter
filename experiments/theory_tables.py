@@ -105,6 +105,7 @@ def collect() -> dict[str, tuple[str, str]]:
         put("EOneSepLStarBound", violation_rate_bound(k_star, sep["n_test"], 0.05), src, 5)
         put("EOneSepInconsistentRuns", sep["runs_with_training_error"], src)
         put("EOneSepRunsTotal", sep["runs_total"], src)
+        put("EOneSepConsistentRuns", sep["runs_total"] - sep["runs_with_training_error"], src)
         put("EOneSepMaxTrainNuisancePeak", sep["max_train_nuisance_peak"], src)
         put("EOneNLast", s["regimes"]["overlapping"]["n"][-1], src)
         # How sharply the nuisance peak-contrast density ends at theta* (overlapping regime,
