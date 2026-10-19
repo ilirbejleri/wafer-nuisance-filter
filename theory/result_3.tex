@@ -166,17 +166,18 @@ $[\EThreeBRangeLo,\EThreeBRangeHi]$ at the largest $n$, holds for all three feat
 
 \begin{center}
 \small
-\begin{tabular}{lccccc}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcccccc}
 \toprule
-& \multicolumn{3}{c}{$n\cdot$improvement at $n=\EThreeBNMaxOverP\,p$} & & per-run error \\
+& \multicolumn{3}{c}{$n\cdot$improvement at $n=\EThreeBNMaxOverP\,p$} & & per-run error & 0-1 improvement \\
 \cmidrule(lr){2-4}
-features & measured & plug-in & population $H,G$ & plug-in / measured & sd / mean \\
+features & measured & plug-in & population $H,G$ & plug-in / measured & sd / mean & (no theory) \\
 \midrule
-PCA-4 & $\EThreeBPcaFourMeasLast\pm\EThreeBPcaFourSeLast$ & $\EThreeBPcaFourPluginLast$ & $\EThreeBPcaFourPopLast$ & $\EThreeBPcaFourRatioLast$ & $\EThreeBPcaFourErrSd$ \\
-PCA-16 & $\EThreeBPcaSixteenMeasLast\pm\EThreeBPcaSixteenSeLast$ & $\EThreeBPcaSixteenPluginLast$ & $\EThreeBPcaSixteenPopLast$ & $\EThreeBPcaSixteenRatioLast$ & $\EThreeBPcaSixteenErrSd$ \\
-PCA-64 & $\EThreeBPcaSixtyFourMeasLast\pm\EThreeBPcaSixtyFourSeLast$ & $\EThreeBPcaSixtyFourPluginLast$ & $\EThreeBPcaSixtyFourPopLast$ & $\EThreeBPcaSixtyFourRatioLast$ & $\EThreeBPcaSixtyFourErrSd$ \\
+PCA-4 & $\EThreeBPcaFourMeasLast\pm\EThreeBPcaFourSeLast$ & $\EThreeBPcaFourPluginLast$ & $\EThreeBPcaFourPopLast$ & $\EThreeBPcaFourRatioLast$ & $\EThreeBPcaFourErrSd$ & $\EThreeBPcaFourZeroOneLast\pm\EThreeBPcaFourZeroOneSeLast$ \\
+PCA-16 & $\EThreeBPcaSixteenMeasLast\pm\EThreeBPcaSixteenSeLast$ & $\EThreeBPcaSixteenPluginLast$ & $\EThreeBPcaSixteenPopLast$ & $\EThreeBPcaSixteenRatioLast$ & $\EThreeBPcaSixteenErrSd$ & $\EThreeBPcaSixteenZeroOneLast\pm\EThreeBPcaSixteenZeroOneSeLast$ \\
+PCA-64 & $\EThreeBPcaSixtyFourMeasLast\pm\EThreeBPcaSixtyFourSeLast$ & $\EThreeBPcaSixtyFourPluginLast$ & $\EThreeBPcaSixtyFourPopLast$ & $\EThreeBPcaSixtyFourRatioLast$ & $\EThreeBPcaSixtyFourErrSd$ & $\EThreeBPcaSixtyFourZeroOneLast\pm\EThreeBPcaSixtyFourZeroOneSeLast$ \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{center}
 
 Estimating $H$ and $G$ from the $n$ labels costs almost nothing: plug-in and population predictions
@@ -186,6 +187,8 @@ $\EThreeBRatioFirstMin$--$\EThreeBRatioFirstMax$ of the improvement, because the
 far above its limit. Single runs scatter: the per-run error is as wide as the spread of the
 improvement itself, while the prediction varies by only $\EThreeBPredSdMin$--$\EThreeBPredSdMax$ of the
 mean. For PCA-4, $\EThreeBPcaFourFracNeg$ of runs even got worse with $\EThreeBFactor\times$ the labels.
+The last column is the measured drop in test 0-1 error from $n$ to $\EThreeBFactor n$ labels (mean
+$\pm$ se), reported with no theory attached.
 
 \begin{figure}[tb]
   \centering
