@@ -39,11 +39,13 @@ features with large-margin data, not this overlapping problem.
 underestimates the excess at $n=10p$ by up to $\EThreePcaFourRatioFirst\times$. Result~3b shows that
 estimating $H$ and $G$ is not the weak point; the onset of the asymptotic regime is.
 
-\paragraph{Result 4: a worst-case Bernoulli and a union bound.} (i) Hoeffding's inequality holds
-for every Bernoulli parameter, so its margin is the one for variance $\frac14$, while flags with
-$p$ below $\alpha=\EFourAlpha$ have variance below $\alpha$. I kept to elementary tools (Hoeffding
-rather than variance-adaptive or exact binomial intervals); either would give a tighter margin.
-(ii) The union over $T=\EFourT$ thresholds widens the margin by
-$\sqrt{\ln(T/\delta)/\ln(1/\delta)}=\EFourUnionFactor$. The cost shows up as sensitivity: detection
-$\EFourTwoKDetect$ at $m=2{,}000$ and $\EFourEightKDetect$ at $m=8{,}000$, against
-$\EFourOracleDetect$ with full knowledge of $p(t)$.
+\paragraph{Result 4: the variance of rare flags and a union bound.} (i) Hoeffding's inequality
+holds for every Bernoulli parameter, so its margin is the one for variance $\frac14$, while flags at
+a rate near $\alpha=\EFourAlpha$ have variance about $\alpha$. The multiplicative Chernoff bound uses
+that small variance: its margin is relative, $\eta\alpha$ with $\eta\propto1/\sqrt{\alpha m}$ instead of
+$1/\sqrt m$, so it certifies from $m=\EFourChSmallestMAll$ in every repeat instead of
+$\EFourSmallestM$, and detects $\EFourChTwoKDetect$ instead of $\EFourTwoKDetect$ at $m=2{,}000$.
+Exact binomial intervals would be tighter still. (ii) The union over $T=\EFourT$ thresholds
+widens Hoeffding's margin by $\sqrt{\ln(T/\delta)/\ln(1/\delta)}=\EFourUnionFactor$ and Chernoff's by
+the same factor. Even the Chernoff rule leaves a gap to the $\EFourOracleDetect$ detection of a
+threshold set with full knowledge of $p(t)$: $\EFourChEightKDetect$ at $m=8{,}000$.

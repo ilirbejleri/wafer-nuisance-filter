@@ -79,16 +79,20 @@ def panel_d(ax) -> None:
 def panel_a(ax) -> None:
     r = read_results("e4_false_alarms")
     s, alpha = r["summary"], r["config"]["alpha"]
-    q = [x for x in s["per_m"] if x["mean_certified"] is not None]
-    ms = np.array([x["m"] for x in q], float)
-    ax.plot(ms, [x["mean_certified"] for x in q], "o--", color=SERIES[1], label="certified bound")
-    ax.plot(ms, [x["mean_true_far"] for x in q], "o-", color=SERIES[0],
-            label="true FAR of selected threshold")
+    rules = (("Hoeffding", s["per_m"], SERIES[0]),
+             ("Chernoff", [x["chernoff"] | {"m": x["m"]} for x in s["per_m"]], SERIES[3]))
+    for name, qs, color in rules:
+        q = [x for x in qs if x["mean_certified"] is not None]
+        ms = np.array([x["m"] for x in q], float)
+        ax.plot(ms, [x["mean_certified"] for x in q], "o--", color=color, alpha=0.6,
+                label=f"{name}: certified bound")
+        ax.plot(ms, [x["mean_true_far"] for x in q], "o-", color=color,
+                label=f"{name}: true FAR of selected threshold")
     ax.axhline(alpha, color=REFERENCE, ls=":", lw=1.4, label=f"α = {alpha}")
     ax.set(xscale="log", xlabel="certification dies m", ylabel="die-level false-alarm rate",
            title="Result 4: certified false-alarm rate", ylim=(0, 1.5 * alpha))
     log_ticks(ax, [x["m"] for x in s["per_m"]], y_log=False)
-    ax.legend(fontsize=8, loc="upper right")
+    ax.legend(fontsize=7, loc="upper right")
 
 
 PANELS: tuple[Callable, ...] = (panel_b, panel_c, panel_d, panel_a)

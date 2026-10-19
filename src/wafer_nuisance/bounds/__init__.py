@@ -25,12 +25,17 @@ from wafer_nuisance.bounds.result_3 import (
 from wafer_nuisance.bounds.result_4 import (
     certification_margin,
     certified_far,
+    chernoff_certified_far,
+    chernoff_eta,
     select_threshold,
+    select_threshold_chernoff,
     violation_rate_bound,
 )
 
-__all__ = ["agnostic_bound", "certification_margin", "certified_far", "clipped_logistic_loss",
+__all__ = ["agnostic_bound", "certification_margin", "certified_far", "chernoff_certified_far",
+           "chernoff_eta", "clipped_logistic_loss",
            "hoeffding_halfwidth", "hoeffding_interval", "misspecification_ratio",
            "predicted_excess", "predicted_improvement", "rademacher_bound",
            "rademacher_bound_clipped", "rademacher_complexity_bound", "realizable_bound",
-           "sandwich", "select_threshold", "trace_HinvG", "vc_bound", "violation_rate_bound"]
+           "sandwich", "select_threshold", "select_threshold_chernoff", "trace_HinvG", "vc_bound",
+           "violation_rate_bound"]

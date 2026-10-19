@@ -380,7 +380,22 @@ def collect() -> dict[str, tuple[str, str]]:
         with open(ROOT / "results" / "e4_false_alarms_raw.csv") as f:
             far = [float(r["true_far"]) for r in csv.DictReader(f) if int(r["selected"]) >= 0]
         put("EFourMaxSelectedFar", max(far), "e4_false_alarms_raw.csv", 4)
-        names = {500: "FiveHundred", 1000: "OneK", 2000: "TwoK", 4000: "FourK", 8000: "EightK"}
+        # Multiplicative-Chernoff rule: certifiable only if eta = sqrt(2 ln(T/delta)/(alpha m)) < 1,
+        # i.e. m > 2 ln(T/delta) / alpha.
+        put("EFourChMinMPossible",
+            math.floor(2 * math.log(ea_cfg["T"] / ea_cfg["delta"]) / alpha) + 1, src)
+        put("EFourChPass", "yes" if s["checks"]["chernoff_violation_fraction_le_delta_every_m"]
+            else "no", src)
+        put("EFourChSmallestM", s["chernoff_smallest_m_certifiable_any_repeat"]
+            or "\\text{none}", src)
+        put("EFourChSmallestMAll", s["chernoff_smallest_m_certifiable_every_repeat"]
+            or "\\text{none}", src)
+        with open(ROOT / "results" / "e4_false_alarms_raw.csv") as f:
+            far = [float(r["true_far_chernoff"]) for r in csv.DictReader(f)
+                   if int(r["selected_chernoff"]) >= 0]
+        put("EFourChMaxSelectedFar", max(far), "e4_false_alarms_raw.csv", 4)
+        names = {300: "ThreeHundred", 500: "FiveHundred", 1000: "OneK", 2000: "TwoK",
+                 4000: "FourK", 8000: "EightK"}
         for q in s["per_m"]:
             p = "EFour" + names[q["m"]]
             put(f"{p}Cert", pct(q["fraction_certifiable"]), src)
@@ -396,6 +411,16 @@ def collect() -> dict[str, tuple[str, str]]:
                 else "\\text{--}", src, 4)
             put(f"{p}Detect", q["mean_flag_rate_defective"]
                 if q["mean_flag_rate_defective"] is not None else "\\text{--}", src)
+            c, pc = q["chernoff"], "EFourCh" + names[q["m"]]
+            put(f"{pc}Eta", c["eta"], src, 2)
+            put(f"{pc}Cert", pct(c["fraction_certifiable"]), src)
+            put(f"{pc}Viol", pct(c["violation_fraction"]), src)
+            put(f"{pc}ViolHi", pct(violation_rate_bound(c["violations"], ea_cfg["repeats"],
+                                                         ea_cfg["delta"])), src)
+            for key, field in (("TrueFar", "mean_true_far"), ("CertBound", "mean_certified")):
+                put(f"{pc}{key}", c[field] if c[field] is not None else "\\text{--}", src, 4)
+            put(f"{pc}Detect", c["mean_flag_rate_defective"]
+                if c["mean_flag_rate_defective"] is not None else "\\text{--}", src)
 
     # Pool sizes actually used (README pool table), each read from the results file that used it.
     tags = ("e1_thresholds", "e2_linear_bounds", "e3_learning_curve", "e4_false_alarms")

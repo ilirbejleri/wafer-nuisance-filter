@@ -35,6 +35,31 @@ def test_result_4_hand_values_and_selection():
     assert select_threshold(grid, p_hat, m=10, alpha=0.05) is None
 
 
+def test_result_4_chernoff_hand_values_and_selection():
+    from wafer_nuisance.bounds import (
+        chernoff_certified_far,
+        chernoff_eta,
+        select_threshold_chernoff,
+    )
+
+    # m = 1000, T = 50, delta = alpha = 0.05: c = 2 ln(1000) / 1000 = 0.0138155,
+    # eta = sqrt(c / 0.05) = 0.5256522, so the rule needs p_hat <= 0.4743478 * 0.05 = 0.0237174.
+    assert chernoff_eta(1000, 50, 0.05, 0.05) == pytest.approx(0.5256522, rel=1e-6)
+    p_hat = np.array([0.0, 0.01, 0.02] + [0.5] * 47)
+    U = chernoff_certified_far(p_hat, 1000, 0.05)
+    np.testing.assert_allclose(U[:3], [0.0138155, 0.0305413, 0.0449085], rtol=1e-5)
+    grid = np.arange(50.0)
+    assert select_threshold_chernoff(grid, p_hat[::-1], m=1000) == 47  # first p_hat = 0.02
+    # The rule and the bound agree: certified iff U <= alpha.
+    for ph in (0.0237, 0.0238):
+        assert (ph <= (1 - chernoff_eta(1000, 50)) * 0.05) == bool(
+            chernoff_certified_far(np.full(50, ph), 1000)[0] <= 0.05)
+    # eta >= 1 below m = 2 ln(T/delta) / alpha = 276.3: nothing certifiable, even with p_hat = 0.
+    assert chernoff_eta(276, 50) >= 1 > chernoff_eta(277, 50)
+    assert select_threshold_chernoff(grid, np.zeros(50), m=276) is None
+    assert select_threshold_chernoff(grid, np.zeros(50), m=277) == 0
+
+
 def test_violation_rate_bound_hand_values():
     from wafer_nuisance.bounds import violation_rate_bound
 

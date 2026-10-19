@@ -14,7 +14,7 @@ how well standard learning theory predicts that number**.
 | **2** Linear filter, VC and Rademacher bounds | Both bound the 0-1 error of every filter in the class | Both above the test error in {{ETwoMinFracBoth}} of runs. The VC bound (hand-crafted features) beats the trivial error {{TrivialError}} (always predict nuisance) from n = {{ETwoHandFirstNVC}} and is {{ETwoHandVCRatioLast}}× the test error at n = {{ETwoNLast}}. The Rademacher bound never beats it ({{ETwoRadLastMin}}–{{ETwoRadLastMax}} at n = {{ETwoNLast}}) |
 | **3** Learning curve of logistic regression | Excess logistic loss ≈ Tr(H⁻¹G)/2n | measured / predicted at n = 300p: {{EThreePcaFourRatioLast}}, {{EThreePcaSixteenRatioLast}}, {{EThreePcaSixtyFourRatioLast}} (p = {{EThreePcaFourP}}, {{EThreePcaSixteenP}}, {{EThreePcaSixtyFourP}}); Wald coverage {{EThreePcaFourCoverage}}, {{EThreePcaSixteenCoverage}}, {{EThreePcaSixtyFourCoverage}} |
 | **3b** What {{EThreeBFactor}}× more labels will buy | The same formula, with H and G estimated from the labels already in hand | plug-in / measured gain at n = {{EThreeBNMaxOverP}}p: {{EThreeBPcaFourRatioLast}}, {{EThreeBPcaSixteenRatioLast}}, {{EThreeBPcaSixtyFourRatioLast}}; at n = {{EThreeBNMinOverP}}p only {{EThreeBRatioFirstMin}}–{{EThreeBRatioFirstMax}} |
-| **4** Certified die-level false-alarm rate | Hoeffding + a union bound over T = {{EFourT}} thresholds certifies FAR ≤ α = {{EFourAlpha}} | No violations in {{EFourRepeats}} repeats at any m (violation rate ≤ {{EFourViolBoundZero}} at 95%). Certifiable from m = {{EFourSmallestM}} clean dies, where the selected threshold's true FAR is {{EFourTwoKTrueFar}} |
+| **4** Certified die-level false-alarm rate | Hoeffding or a multiplicative Chernoff bound, plus a union bound over T = {{EFourT}} thresholds, certifies FAR ≤ α = {{EFourAlpha}} | No violations for either rule in {{EFourRepeats}} repeats at any m (violation rate ≤ {{EFourViolBoundZero}} at 95%). Certifiable in every repeat from m = {{EFourSmallestMAll}} clean dies (Hoeffding) or m = {{EFourChSmallestMAll}} (Chernoff); at m = 2,000 the selected threshold's true FAR is {{EFourTwoKTrueFar}} vs. {{EFourChTwoKTrueFar}} and detection {{EFourTwoKDetect}} vs. {{EFourChTwoKDetect}} |
 
 ## What I found
 
@@ -34,6 +34,9 @@ how well standard learning theory predicts that number**.
   underestimates it. Estimating H and G from the training labels (3b) costs almost nothing. It
   predicts the *average* gain from more labels, though; one batch's gain differs from it with a
   standard deviation of {{EThreeBPcaSixtyFourErrSd}}–{{EThreeBPcaFourErrSd}} times the mean gain.
+- **Using the variance pays off for the false-alarm certificate.** Hoeffding's margin is the one for
+  the worst-case variance 1/4; the multiplicative Chernoff bound uses the small variance of rare flags
+  and certifies with {{EFourChSmallestMAll}} clean dies instead of {{EFourSmallestMAll}}.
 - **Ten hand-crafted features match a 384-dimensional CNN embedding** in best-in-class error
   ({{ETwoHandLStar}} vs. {{ETwoCnnFullLStar}}) and are at least as good at every training size tested.
 
@@ -75,5 +78,7 @@ docs/                 README.template.md (this README is generated from it)
 - **Population quantities.** L(h\*) and Result 3's θ\*, H and G come from a large labeled
   population pool. Result 3b removes that need for H and G, but only for the expected gain, and
   only once n is large enough for the asymptotics.
-- **Elementary tools.** I kept to elementary tools (Hoeffding rather than variance-adaptive or
-  exact binomial intervals, no cross-validation), which is part of why Result 4 is conservative.
+- **Elementary tools.** I kept to elementary tools. Result 4's Hoeffding certificate pays for the
+  worst-case Bernoulli variance 1/4; the multiplicative Chernoff certificate uses the small variance
+  of rare flags and is much less conservative. I did not use exact binomial intervals or
+  cross-validation.
